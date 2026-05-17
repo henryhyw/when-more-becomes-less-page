@@ -329,47 +329,6 @@ a:hover { color: var(--text); }
   .usecase-grid { grid-template-columns: 1fr; gap: 14px; }
 }
 
-/* Quick / Deep reading mode pill */
-.mode-toggle {
-  display: inline-flex;
-  padding: 2px;
-  background: var(--bg-warm);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-  letter-spacing: 0.06em;
-}
-.mode-toggle .mode-btn {
-  background: transparent;
-  border: 0;
-  padding: 5px 12px;
-  border-radius: 999px;
-  color: var(--text-mute);
-  cursor: pointer;
-  transition: background 0.18s, color 0.18s;
-}
-.mode-toggle .mode-btn:hover { color: var(--text); }
-.mode-toggle .mode-btn.active {
-  background: var(--text);
-  color: var(--bg-card);
-  font-weight: 500;
-}
-
-/* Quick mode — show only the spine: hero short, eyebrows, titles, takeaways, charts */
-body.mode-quick .prose:not(.prose-essential) { display: none; }
-body.mode-quick .hero-sub                    { font-size: 19px; }
-body.mode-quick .hero-leak                   { margin: 22px 0 18px; }
-body.mode-quick .hero-author                 { display: none; }
-body.mode-quick section                      { padding: 60px 0; }
-body.mode-quick .takeaway {
-  font-size: 16.5px;
-  padding: 14px 18px;
-  background: var(--bg-warm);
-  border-radius: 10px;
-  border-left: 3px solid var(--accent);
-  margin: 14px 0 18px 0;
-}
 
 /* -----------------------------------------------------------------------
  * Tooltip (for hovering over chart elements)

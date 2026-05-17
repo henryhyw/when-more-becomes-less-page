@@ -1719,45 +1719,6 @@ function onResize() {
 }
 
 // ========================================================================
-// MODE TOGGLE — Quick / Deep reading
-// ========================================================================
-const ModeToggle = {
-  KEY: "wmbl:mode",   // when-more-becomes-less mode pref
-
-  apply(mode) {
-    document.body.classList.toggle("mode-quick", mode === "quick");
-    $$("#mode-toggle .mode-btn").forEach(b => {
-      const active = b.dataset.mode === mode;
-      b.classList.toggle("active", active);
-      b.setAttribute("aria-selected", active ? "true" : "false");
-    });
-    try { localStorage.setItem(this.KEY, mode); } catch (e) {}
-    // Charts that read container width need a redraw after layout settles
-    setTimeout(() => {
-      try { if ($("#curves-chart"))    Curves.draw(); }    catch (e) {}
-      try {
-        const psel = $("#picker-model");
-        if ($("#picker-chart") && psel) Picker.draw(psel.value);
-      } catch (e) {}
-      try { if ($("#forest-chart"))    Forest.draw(); }    catch (e) {}
-      try { if ($("#ablation-chart"))  Ablation.draw(); }  catch (e) {}
-      try { if ($("#multiling-chart")) Multiling.draw(); } catch (e) {}
-      try { if ($("#attention-chart")) Attention.draw(); } catch (e) {}
-      try { if ($("#boundary-chart")) Boundary.draw(); }   catch (e) {}
-    }, 80);
-  },
-
-  init() {
-    let saved = "deep";
-    try { saved = localStorage.getItem(this.KEY) || "deep"; } catch (e) {}
-    this.apply(saved);
-    $$("#mode-toggle .mode-btn").forEach(b => {
-      b.addEventListener("click", () => this.apply(b.dataset.mode));
-    });
-  },
-};
-
-// ========================================================================
 // BOOT
 // ========================================================================
 function boot() {
@@ -1780,7 +1741,6 @@ function boot() {
   safe("Attention",   () => Attention.init());
   safe("Boundary",    () => Boundary.init());
   safe("BibTeXCopy",  () => BibTeXCopy.init());
-  safe("ModeToggle",  () => ModeToggle.init());
   safe("Reveal",      () => initReveal());
   window.addEventListener("resize", onResize);
 }
