@@ -441,31 +441,6 @@ section { padding: 96px 0; scroll-margin-top: 68px; }
   margin: 12px 0 32px;
 }
 
-/* Hero leak — mini live sweep of §02 curves teaser */
-.hero-leak {
-  margin: 28px 0 24px;
-  max-width: 640px;
-  overflow: visible;
-}
-.hero-leak svg { width: 100%; height: auto; overflow: visible; display: block; }
-.hero-leak .hl-grid    { stroke: var(--line-soft); stroke-width: 1; }
-.hero-leak .hl-axis    { stroke: var(--line); stroke-width: 1; }
-.hero-leak .hl-tick    { font-family: var(--font-mono); font-size: 10px; fill: var(--text-faint); }
-.hero-leak .hl-line-adj  { stroke: var(--up);   stroke-width: 2.2; fill: none; stroke-linecap: round; }
-.hero-leak .hl-line-disp { stroke: var(--down); stroke-width: 2.2; fill: none; stroke-linecap: round; }
-.hero-leak .hl-dot-adj   { fill: var(--up);   stroke: var(--bg-warm); stroke-width: 1.5; }
-.hero-leak .hl-dot-disp  { fill: var(--down); stroke: var(--bg-warm); stroke-width: 1.5; }
-.hero-leak .hl-scrub     { stroke: var(--text-faint); stroke-width: 1; stroke-dasharray: 2 4; }
-.hero-leak .hl-label-adj  {
-  font-family: var(--font-mono); font-size: 11px; fill: var(--up);
-}
-.hero-leak .hl-label-disp {
-  font-family: var(--font-mono); font-size: 11px; fill: var(--down);
-}
-.hero-leak .hl-n-readout {
-  font-family: var(--font-mono); font-size: 11px;
-  fill: var(--text-mute); letter-spacing: 0.08em;
-}
 .hero-author em { color: var(--text-faint); font-style: italic; }
 
 .hero-actions {
