@@ -396,7 +396,7 @@ svg text { pointer-events: none; user-select: none; }
 .inner-wide  { max-width: var(--inner-wide-max); margin: 0 auto; padding: 0 var(--gutter); }
 
 section { padding: 96px 0; scroll-margin-top: 68px; }
-.hero   { padding: 118px 0 70px; min-height: auto; display: flex; flex-direction: column; justify-content: flex-start;
+.hero   { padding: 118px 0 70px;
           background: linear-gradient(180deg, #fbf8ee 0%, var(--bg-warm) 80%);
           scroll-margin-top: 0; }
 
