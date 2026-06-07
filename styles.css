@@ -1,29 +1,29 @@
 /* =========================================================================
  * When More Becomes Less — project page
- * Cream / warm-light editorial theme
+ * Swiss-grotesk editorial theme (Archivo / ink navy)
  * ========================================================================= */
 
 :root {
   /* Backgrounds */
-  --bg-warm:        #faf9f5;
-  --bg-card:        #f4ede0;
-  --bg-elevated:    #ffffff;
-  --bg-prompt:      #f9f4e8;
+  --bg-warm:        #ffffff;
+  --bg-card:        #f2f2f2;
+  --bg-elevated:    #fafafa;
+  --bg-prompt:      #f4f5f7;
 
   /* Text */
-  --text:           #2a2a28;
-  --text-soft:      #4a463e;
-  --text-mute:      #807a6e;
-  --text-faint:     #a09a8c;
+  --text:           #111111;
+  --text-soft:      #333333;
+  --text-mute:      #6b6b6b;
+  --text-faint:     #b3b3b3;
 
   /* Lines */
-  --line-soft:      #ece5d4;
-  --line:           #e3dccc;
-  --line-strong:    #c8c0aa;
+  --line-soft:      #f0f0f0;
+  --line:           #e3e3e3;
+  --line-strong:    #cccccc;
 
-  /* Accent (warm orange-red) */
-  --accent:         #cc785c;
-  --accent-soft:    #e8a08a;
+  /* Accent (low-saturation ink navy) */
+  --accent:         #1d3a73;
+  --accent-soft:    #4f6aa3;
 
   /* Up/down semantic */
   --up:             #4a8a73;     /* adjacent-saturating green */
@@ -37,9 +37,9 @@
   --fam-OLMo-2:     #5b7da0;     /* slate-blue */
 
   /* Typography */
-  --font-display:   "Fraunces", "Tiempos Headline", Georgia, serif;
-  --font-body:      "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono:      "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-display:   "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body:      "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-mono:      "Space Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
   /* Layout */
   --gutter:         28px;
@@ -77,7 +77,7 @@ a:hover { color: var(--text); }
 .topnav {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 80;
-  background: rgba(250, 249, 245, 0.88);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid transparent;
@@ -716,7 +716,7 @@ section { padding: 96px 0; scroll-margin-top: 68px; }
   color: var(--text);
   appearance: none;
   cursor: pointer;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%226%22%20viewBox%3D%220%200%2010%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1%201l4%204%204-4%22%20stroke%3D%22%23807a6e%22%20stroke-width%3D%221.4%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%226%22%20viewBox%3D%220%200%2010%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1%201l4%204%204-4%22%20stroke%3D%22%236b6b6b%22%20stroke-width%3D%221.4%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: right 12px center;
 }
